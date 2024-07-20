@@ -20,5 +20,11 @@ namespace CleanArc.Domain.Orders
             Price = price;
             Id = Guid.NewGuid();
         }
+        public void Edit(Guid productId, decimal count, decimal price)
+        {
+            ProductId = productId;
+            Count = count;
+            Price = price;
+        }
     }
 }
