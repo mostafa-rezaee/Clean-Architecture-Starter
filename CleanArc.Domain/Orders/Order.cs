@@ -26,5 +26,10 @@ namespace CleanArc.Domain.Orders
             Count = count;
             Price = price;
         }
+
+        public void IncreaseCount(decimal count) 
+        {
+            Count = +count;
+        }
     }
 }
