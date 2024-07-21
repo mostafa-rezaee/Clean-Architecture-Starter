@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanArc.Domain.Orders
+namespace CleanArc.Domain.Entities
 {
     public class Order
     {
@@ -35,7 +35,7 @@ namespace CleanArc.Domain.Orders
             FinallDate = DateTime.Now;
         }
 
-        public void IncreaseCount(decimal count) 
+        public void IncreaseCount(decimal count)
         {
             Count = +count;
         }

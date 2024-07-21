@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArc.Domain", "CleanArc.Domain\CleanArc.Domain.csproj", "{1FC81931-6A50-480C-BDD7-E9959456B9D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArc.Domain", "CleanArc.Domain\CleanArc.Domain.csproj", "{1FC81931-6A50-480C-BDD7-E9959456B9D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArc.Application", "CleanArc.Application\CleanArc.Application.csproj", "{09EF4CAB-4277-49DE-BD1A-B31D7C23019A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1FC81931-6A50-480C-BDD7-E9959456B9D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FC81931-6A50-480C-BDD7-E9959456B9D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FC81931-6A50-480C-BDD7-E9959456B9D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09EF4CAB-4277-49DE-BD1A-B31D7C23019A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09EF4CAB-4277-49DE-BD1A-B31D7C23019A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09EF4CAB-4277-49DE-BD1A-B31D7C23019A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09EF4CAB-4277-49DE-BD1A-B31D7C23019A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

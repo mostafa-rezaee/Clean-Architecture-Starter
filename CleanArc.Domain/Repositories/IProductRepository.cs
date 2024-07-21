@@ -1,4 +1,4 @@
-﻿using CleanArc.Domain.Products;
+﻿using CleanArc.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +14,6 @@ namespace CleanArc.Domain.Repositories
         void Insert(Product product);
         void Update(Product product);
         void Delete(Guid id);
+        void SaveChanges();
     }
 }

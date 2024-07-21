@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanArc.Domain.Products
+namespace CleanArc.Domain.Entities
 {
     public class Product
     {
@@ -19,7 +19,7 @@ namespace CleanArc.Domain.Products
             Price = price;
             Description = description;
             Id = Guid.NewGuid();
-            
+
         }
 
         public void Edit(string title, decimal price, string description)

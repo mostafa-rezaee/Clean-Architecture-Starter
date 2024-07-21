@@ -1,4 +1,4 @@
-﻿using CleanArc.Domain.Orders;
+﻿using CleanArc.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +13,7 @@ namespace CleanArc.Domain.Repositories
         List<Order> GetAll();
         void Insert(Order order);
         void Update(Order order);
+        void SaveChanges();
 
     }
 }
