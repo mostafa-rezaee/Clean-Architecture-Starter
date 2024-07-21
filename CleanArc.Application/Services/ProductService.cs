@@ -26,6 +26,7 @@ namespace CleanArc.Application.Services
         public void EditProduct(EditProductDto productDto)
         {
             var product = _productRepository.GetById(productDto.Id);
+            product.Edit(productDto.Title,productDto.Price,productDto.Description);
             _productRepository.Update(product);
             _productRepository.SaveChanges();
         }

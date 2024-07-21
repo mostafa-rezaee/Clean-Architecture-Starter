@@ -27,6 +27,7 @@ namespace CleanArc.Application.Services
         public void EditOrder(EditOrderDto orderDto)
         {
             var order = _orderRepository.GetById(orderDto.Id);
+            order.Edit(orderDto.ProductId, orderDto.Count, orderDto.Price);
             _orderRepository.Update(order);
             _orderRepository.SaveChanges();
         }
