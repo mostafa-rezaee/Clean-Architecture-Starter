@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Persistence.EF\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CleanArc.Contract\CleanArc.Contract.csproj" />
-    <ProjectReference Include="..\CleanArc.Domain\CleanArc.Domain.csproj" />
   </ItemGroup>
 
 </Project>

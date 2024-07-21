@@ -1,4 +1,5 @@
 ﻿using CleanArc.Application.DTOs;
+using CleanArc.Contract;
 using CleanArc.Domain.Entities;
 using CleanArc.Domain.Repositories;
 using System;
@@ -12,9 +13,11 @@ namespace CleanArc.Application.Services
     public class OrderService : IOrderService
     {
         private readonly IOrderRepository _orderRepository;
-        public OrderService(IOrderRepository orderRepository)
+        private readonly ISmsService _smsService;
+        public OrderService(IOrderRepository orderRepository, ISmsService smsService)
         {
             _orderRepository = orderRepository;
+            _smsService = smsService;
         }
 
         public void AddOrder(AddOrderDto orderDto)
@@ -38,6 +41,7 @@ namespace CleanArc.Application.Services
             order.FinalizeOrder();
             _orderRepository.Update(order);
             _orderRepository.SaveChanges();
+            _smsService.SendMessage(new SmsObject { PhoneNumber = "09358660709", Message = "" });
         }
 
         public OrderDto GetOrderDto(Guid id)
