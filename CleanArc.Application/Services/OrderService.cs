@@ -44,7 +44,7 @@ namespace CleanArc.Application.Services
             _smsService.SendMessage(new SmsObject { PhoneNumber = "09358660709", Message = "" });
         }
 
-        public OrderDto GetOrderDto(Guid id)
+        public OrderDto GetOrderById(Guid id)
         {
             var order = _orderRepository.GetById(id);
             return new OrderDto { 
@@ -55,7 +55,7 @@ namespace CleanArc.Application.Services
             };
         }
 
-        public List<OrderDto> GetOrderDtos()
+        public List<OrderDto> GetOrders()
         {
             return _orderRepository.GetAll().Select(order => new OrderDto {
                 Id = order.Id,

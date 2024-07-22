@@ -9,7 +9,7 @@ namespace CleanArc.Infrastructure.Persistence.Memory
 {
     public class Context
     {
-        public List<Product> Products{ get; set; }
-        public List<Order> Orders { get; set; }
+        public List<Product> Products { get; set; }
+        public List<Order> Orders { get; set; } = new List<Order> { new Order(Guid.NewGuid(), 1, 0) };
     }
 }

@@ -12,7 +12,7 @@ namespace CleanArc.Application.Services
         void AddOrder(AddOrderDto orderDto);
         void EditOrder(EditOrderDto orderDto);
         void FinalizeOrder(FinalizeOrderDto finalizeOrderDto);
-        OrderDto GetOrderDto(Guid id);
-        List<OrderDto> GetOrderDtos();
+        OrderDto GetOrderById(Guid id);
+        List<OrderDto> GetOrders();
     }
 }
